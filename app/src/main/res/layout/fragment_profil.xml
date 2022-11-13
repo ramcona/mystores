@@ -1,0 +1,256 @@
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="arira.my.stores.ui.fragment.HomeFragment">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                style="@style/title12"
+                android:text="Profil"/>
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:padding="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/ic_baseline_account_circle_24"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp">
+                        <TextView
+                            style="@style/title12"
+                            android:text="Nama Pengguna"/>
+                        <TextView
+                            android:textColor="@color/abu_pekat"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            style="@style/body10"
+                            android:text="penggunabaru@gmail.com"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    android:layout_marginHorizontal="@dimen/_5sdp">
+                    <LinearLayout
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:src="@drawable/ic_checkout"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"/>
+                        <LinearLayout
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:textColor="@color/abu_pekat"
+                                style="@style/body10"
+                                android:text="Jumlah Transaksi"/>
+                            <TextView
+                                android:layout_marginTop="@dimen/_5sdp"
+                                style="@style/title12"
+                                android:text="4 Transaksi"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_15sdp"
+                    style="@style/title14"
+                    android:text="Informasi Pribadi"/>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:src="@drawable/ic_personal_information"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"/>
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            style="@style/title12"
+                            android:text="Informasi Akun"/>
+                        <TextView
+                            android:textColor="@color/abu_pekat"
+                            style="@style/body10"
+                            android:text="Informasi pribadi anda seperti nama, email dan data lainnya dapat anda lihat disini"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:src="@drawable/ic_address"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"/>
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            style="@style/title12"
+                            android:text="Alamat Pengiriman"/>
+                        <TextView
+                            android:textColor="@color/abu_pekat"
+                            style="@style/body10"
+                            android:text="Daftar alamat yang sudah anda daftar dengan tujuan untuk pengiriman bisa anda lihat disini"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:src="@drawable/ic_review"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"/>
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            style="@style/title12"
+                            android:text="Ulasan"/>
+                        <TextView
+                            android:textColor="@color/abu_pekat"
+                            style="@style/body10"
+                            android:text="Setelah anda selesai melakukan transaksi anda dapat dan mengulas produk tersebut"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_15sdp"
+                    style="@style/title14"
+                    android:text="Informasi Lainnya"/>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:src="@drawable/ic_term_and_condition"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"/>
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            style="@style/title12"
+                            android:text="Syarat Dan Ketentuan"/>
+                        <TextView
+                            android:textColor="@color/abu_pekat"
+                            style="@style/body10"
+                            android:text="Syarat dan ketentuan penggunaan aplikasi"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:src="@drawable/ic_privacy_policy"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"/>
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            style="@style/title12"
+                            android:text="Kebijakan Privasi"/>
+                        <TextView
+                            android:textColor="@color/abu_pekat"
+                            style="@style/body10"
+                            android:text="Baca kebijakan privasi untuk pengguna di aplikasi ini"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:src="@drawable/ic_help" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/title12"
+                            android:text="Bantuan" />
+
+                        <TextView
+                            style="@style/body10"
+                            android:text="Bantuan anda dalam pengunaan aplikasi bila mengalami kesulitan dan kendala"
+                            android:textColor="@color/abu_pekat" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

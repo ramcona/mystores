@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_5sdp">
+            <LinearLayout
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/tv_tanggal"
+                            style="@style/title10"
+                            android:text="12 November 2022"/>
+                        <TextView
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:id="@+id/tv_jam"
+                            android:textColor="@color/abu_pekat"
+                            style="@style/body10"
+                            android:text="12:12"/>
+                    </LinearLayout>
+                    <TextView
+                        android:textColor="@color/white"
+                        android:background="@drawable/background_shape_accent"
+                        android:paddingVertical="@dimen/_2sdp"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        style="@style/body10"
+                        android:text="Menunggu Pembayaran"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/abu1_tipis"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_dummy_merch"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"/>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            style="@style/title12"
+                            android:text="Wat The Frick New Man By Getter"/>
+                        <TextView
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:id="@+id/tv_qty"
+                            android:textColor="@color/abu_pekat"
+                            style="@style/body10"
+                            android:text="1 Barang"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/tv_produk_lainnya"
+                    android:textColor="@color/abu_pekat"
+                    style="@style/body10"
+                    android:text="dan 2 Produk lainnya"/>
+
+                <View
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/abu1_tipis"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/abu_pekat"
+                    android:layout_gravity="end"
+                    style="@style/body10"
+                    android:text="Total"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@color/colorPrimaryTeks"
+                    android:layout_gravity="end"
+                    style="@style/title12"
+                    android:text="Rp100.000"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</layout>
